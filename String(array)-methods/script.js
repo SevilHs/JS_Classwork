@@ -159,13 +159,4 @@ const colors = [
   "violet",
   "pink",
 ];
-
-colors.sort(function (a, b) {
-  if (a.length == b.length) {
-    return (a, b) => a.localeCompare(b);
-  } else {
-    return a.length - b.length;
-  }
-});
-
-console.log(colors);
+console.log(colors.sort((a,b)=> a.length-b.length || a.localeCompare(b)));
