@@ -113,12 +113,15 @@ const arr3 = [
   },
 ];
 
-let calcArea = arr3.reduce(
-  (sum, item) => (item.region.length == 6 ? (sum += item.area) : sum),
-  0
-);
+// let calcArea = arr3.reduce(
+//  (sum, item) => (item.region.length == 6 ? (sum += item.area) : sum),
+//  0
+// );
 
-console.log(calcArea);
+// console.log(calcArea);
+
+let calcArea = () => console.log(arr3.reduce((sum, item) => (item.region.length == 6 ? (sum += item.area) : sum),0));
+calcArea();
 
 
 
