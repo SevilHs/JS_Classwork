@@ -79,6 +79,8 @@ console.log(
 );
 
 
+console.log(Array.from(new Set(text.split("").filter((elem)=>vowels.includes(elem)))));
+
 
 console.log("/////////////////// 3 /////////////");
 ///////////////// 3 ///////////////
