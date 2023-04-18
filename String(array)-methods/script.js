@@ -81,6 +81,9 @@ console.log(
 
 console.log(Array.from(new Set(text.split("").filter((elem)=>vowels.includes(elem)))));
 
+console.log(text.split('').filter((item,index,array)=>vowels.includes(item) && array.indexOf(item)=== index ));
+
+
 
 console.log("/////////////////// 3 /////////////");
 ///////////////// 3 ///////////////
