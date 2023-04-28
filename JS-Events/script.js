@@ -47,12 +47,15 @@ checkbox.addEventListener("click", function () {
   } else {
     checkboxText.style.visibility = "hidden";
   }
+});
+
+form.addEventListener('change',function(){
   if (nameInp.value && surname.value && checkbox.checked) {
     submit.disabled = false;
   } else {
     submit.disabled = true;
   }
-});
+})
 
 radio.forEach(item =>
   item.addEventListener("click", function () {
