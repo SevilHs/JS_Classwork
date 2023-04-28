@@ -5,6 +5,7 @@ let password = document.querySelector("#password");
 let checkbox = document.querySelector("#checkbox");
 let checkboxText = document.querySelector("#checkbox-text");
 let submit = document.querySelector("#submit");
+let form = document.querySelector("form");
 let radio = document.querySelectorAll('input[name="radio"]');
 
 checkboxText.style.visibility = "hidden";
